@@ -6,7 +6,7 @@ const NavBar: React.FC = () => {
         <nav className="bg-transparent w-full">
             <div className="max-w-fit mx-auto flex flex-wrap items-center justify-between p-4">
                 <div className="flex items-center px-8 text-black font-bold text-3xl">
-                    Portfolio
+                    jbunds
                 </div>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul className="font-medium flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">

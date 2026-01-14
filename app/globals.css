@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 /* @theme {
   --color-navbar: oklch(74.917% 0.0745 234.212);
@@ -24,8 +24,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #eaeaea;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
