@@ -1,13 +1,4 @@
-// src/data/projects.ts
-
-export type Project = {
-  title: string;
-  description: string;
-  link?: string;
-  github?: string;
-  image?: string;
-  tags?: string[]; //technologies used
-};
+import { Project } from "../types/project_type";
 
 export const projects: Project[] = [
   {
@@ -44,5 +35,13 @@ export const projects: Project[] = [
     description: "",
     link: "https://jbunds-trivia-app.netlify.app/",
     github: "https://github.com/jbunds801/Trivia-App",
+  },
+  {
+    title: "Task App 2000",
+    description:
+      "A simple, colorful, intuitive task management app built for accessability.",
+    link: "https://taskapp2000-jbunds.netlify.app/",
+    github:
+      "https://github.com/jbunds801/Task-Management-App-with-TypeScript.git",
   },
 ];
