@@ -5,15 +5,72 @@
   --foreground: #171717;
 } */
 
-/* @theme {
-  --color-navbar: oklch(74.917% 0.0745 234.212);
-} */
+@font-face {
+  font-family: Trajan;
+  src: url("../public/TrajanPro-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom colors */
+  --color-pink-cstm: #fd53f2;
+  --color-cyan-cstm: #00e1ff;
+}
+
+.glow-pink:hover {
+  filter: drop-shadow(0 0 4px var(--color-pink-cstm));
+  filter: drop-shadow(0 0 4px var(--color-pink-cstm));
+  filter: drop-shadow(0 0 4px var(--color-pink-cstm));
+}
+
+.glow-cyan:hover {
+  filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
+  filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
+  filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
+}
+
+@keyframes border-shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-border-wrapper {
+  border-radius: 12px;
+  padding: 2px;
+  background: white;
+}
+
+.shimmer-border-wrapper:hover {
+  background: linear-gradient(90deg, #fd53f2, #00e1ff, #fd53f2);
+  background-size: 200% auto;
+  animation: border-shimmer 3s infinite linear;
+}
+
+.glow-pink:hover {
+  filter: drop-shadow(0 0 4px #ff8df7) drop-shadow(0 0 4px #ff8df7);
+}
+
+.glow-cyan:hover {
+  filter: drop-shadow(0 0 4px #77eaf9) drop-shadow(0 0 4px #77eaf9);
+}
+
+/* Reference Only */
+color picker {
+  background-color: #7eb6d6;
+  color: #ff8df7;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -24,8 +81,3 @@
 } */
 
 /* Removed body styles - now controlled by Tailwind in layout.tsx */
-
-color picker {
-  background-color: #7eb6d6;
-  color: #ff8df7;
-}

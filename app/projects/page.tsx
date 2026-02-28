@@ -1,9 +1,11 @@
 import Projects from "../../src/components/Projects";
 
-export default function ProjectsPage() {
+const ProjectsPage = () => {
     return (
-        <main className="max-w-7xl mx-auto p-6">
+        <section className="max-w-7xl mx-auto p-8">
             <Projects />
-        </main>
+        </section>
     );
 }
+
+export default ProjectsPage

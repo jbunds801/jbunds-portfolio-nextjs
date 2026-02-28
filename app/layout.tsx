@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+//import { Geist, Geist_Mono } from "next/font/google";
 import NavBar from "../src/components/NavBar";
 //import HoneyCombBackground from '../src/components/HoneyCombBackground';
 import "./globals.css";
 
-const geistSans = Geist({
+// Google Fonts
+/* const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -12,7 +13,7 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+}); */
 
 // this sets site's title and description in browser tabs and search results
 export const metadata: Metadata = {
@@ -28,8 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#171717] text-amber-50`}
+        className={`antialiased bg-[#171717] text-amber-50`}
       >
+        {/* Background honeycomb pattern - appears on all pages */}
+        {/* <HoneyCombBackground /> */}
+        
         {/* Main content - positioned above the background */}
         <div className="relative z-10">
           <NavBar />

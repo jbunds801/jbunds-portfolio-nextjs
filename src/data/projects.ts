@@ -12,7 +12,7 @@ export const projects: Project[] = [
     title: "Jessica Bundy Polaroid Gallery",
     description:
       "A project where HTML and CSS are used along with Bootstrap, and some 'pre' JavaScript ideas that are not yet functional.",
-    link: "https://jbunds801.github.io/Recreate-Your-Favorite-Website-Assignment/",
+    link: "https://jbundspolaroidgallery.netlify.app/",
     github:
       "https://github.com/jbunds801/Recreate-Your-Favorite-Website-Assignment",
   },
