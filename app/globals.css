@@ -11,9 +11,9 @@
 }
 
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: auto;
 }
-
 
 @theme inline {
   --color-background: var(--background);
@@ -29,11 +29,9 @@ body {
 .glow-pink:hover {
   filter: drop-shadow(0 0 4px var(--color-pink-cstm));
   filter: drop-shadow(0 0 4px var(--color-pink-cstm));
-  filter: drop-shadow(0 0 4px var(--color-pink-cstm));
 }
 
 .glow-cyan:hover {
-  filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
   filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
   filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
 }
@@ -49,14 +47,20 @@ body {
 
 .shimmer-border-wrapper {
   border-radius: 12px;
-  padding: 2px;
   background: white;
 }
 
 .shimmer-border-wrapper:hover {
-  background: linear-gradient(90deg, #fd53f2, #00e1ff, #fd53f2);
-  background-size: 200% auto;
-  animation: border-shimmer 3s infinite linear;
+  background: linear-gradient(
+    65deg,
+    var(--color-pink-cstm),
+    var(--color-cyan-cstm),
+    white,
+    var(--color-cyan-cstm),
+    var(--color-pink-cstm)
+  );
+  background-size: 400% auto;
+  animation: border-shimmer 6s infinite ease;
 }
 
 .glow-pink:hover {

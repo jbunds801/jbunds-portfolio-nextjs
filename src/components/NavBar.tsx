@@ -5,39 +5,39 @@ const NavBar: React.FC = () => {
     return (
         <nav className="bg-transparent w-full">
             <div className="max-w-fit mx-auto flex flex-wrap items-center justify-between p-4">
-                <div className="flex items-center px-8 font-bold text-3xl" style={{ fontFamily: 'Trajan'}}>
+                <div className="flex items-center px-8 font-bold text-3xl" style={{ fontFamily: 'Trajan' }}>
                     Jessica Bundy
                 </div>
-                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul className="font-medium flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                <div className="w-auto" id="navbar-default">
+                    <ul className="font-medium flex flex-row p-4 mt-0 space-x-8">
                         <li>
                             <Link
                                 href="/"
-                                className="block py-2 px-3 rounded-sm md:bg-transparent md:md:p-0 dark:text-white"
+                                className="block py-2 px-3 text-white"
                             >
                                 Home
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href="about"
-                                className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                href="/about"
+                                className="block py-2 px-3 text-white"
                             >
                                 About
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href="projects"
-                                className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                href="/projects"
+                                className="block py-2 px-3 text-white"
                             >
                                 Projects
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href="contact"
-                                className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                href="/contact"
+                                className="block py-2 px-3 text-white"
                             >
                                 Contact
                             </Link>
