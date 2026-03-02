@@ -4,8 +4,8 @@ import React from "react";
 const NavBar: React.FC = () => {
     return (
         <nav className="bg-transparent w-full">
-            <div className="max-w-fit mx-auto flex flex-wrap items-center justify-between p-4">
-                <div className="flex items-center px-8 font-bold text-3xl" style={{ fontFamily: 'Trajan' }}>
+            <div className="max-w-fit mx-auto flex flex-wrap items-center justify-between pt-6">
+                <div className="flex items-center px-8 font-bold text-4xl" style={{ fontFamily: 'Trajan' }}>
                     Jessica Bundy
                 </div>
                 <div className="w-auto" id="navbar-default">

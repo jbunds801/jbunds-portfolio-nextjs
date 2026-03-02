@@ -1,12 +1,13 @@
 # Jbunds Portfolio (Next.js)
 
-Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcases projects with link previews, uses a shared navigation bar, and includes a reusable project card layout.
+Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcases projects with link previews, uses shared page-level layout styling, and reusable UI components.
 
 ## Features
 
-- App Router with layout-level navigation and global styling
+- App Router with shared layout-level navigation and global styling
 - Tailwind CSS utility-first styling
 - Custom font (TrajanPro) loaded via `@font-face` in globals.css
+- Reusable page heading component (`Header`) for consistent title styling and spacing
 - Projects page with alternating card layout
 - Data-driven projects list in a single data file
 - Link preview component using an embedded iframe (when supported by the target site)
@@ -14,7 +15,8 @@ Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcase
 - Shimmer border animation on project cards (white by default, pink-to-cyan on hover)
 - Glow effects on project links via custom CSS classes
 - Custom portfolio colors defined as CSS variables in globals.css
-- Contact form with EmailJS integration
+- Contact page with reusable `mailto:` button component (no form backend)
+- Stable page width behavior via scrollbar gutter handling
 - About page
 
 ## Pages
@@ -30,7 +32,8 @@ Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcase
 - Project card: [src/components/ProjectCard.tsx](src/components/ProjectCard.tsx)
 - Link preview: [src/components/LinkPreview.tsx](src/components/LinkPreview.tsx)
 - Nav bar: [src/components/NavBar.tsx](src/components/NavBar.tsx)
-- Honeycomb background (optional): [src/components/HoneyCombBackground.tsx](src/components/HoneyCombBackground.tsx)
+- Header: [src/components/Header.tsx](src/components/Header.tsx)
+- Mailto button: [src/components/MailToButton.tsx](src/components/MailToButton.tsx)
 
 ## Data
 
@@ -45,6 +48,10 @@ Custom colors, glow effects, and the shimmer border animation are defined in [ap
 - `.glow-pink` - Pink drop-shadow glow on hover
 - `.glow-cyan` - Cyan drop-shadow glow on hover
 - `.shimmer-border-wrapper` - White border by default, animated pink-to-cyan gradient on hover
+
+Layout stability styles are also defined there:
+- `html { overflow-y: scroll; }` - always reserves vertical scrollbar space
+- `scrollbar-gutter: stable both-edges;` - avoids horizontal content shift when scrollbar state changes
 
 
 ## Link Preview Notes

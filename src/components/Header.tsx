@@ -9,7 +9,7 @@ type HeaderProps = {
 
 const Header = ({ children, className = "" }: HeaderProps) => {
     return (
-        <h1 className={`text-4xl font-bold mb-4 ${className}`}>
+        <h1 className={`text-center text-3xl mt-3 pb-16 ${className}`} style={{ fontFamily: 'Trajan' }}>
             {children}
         </h1>
     );

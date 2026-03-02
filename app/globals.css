@@ -10,9 +10,14 @@
   src: url("../public/TrajanPro-Regular.ttf") format("truetype");
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
 }
 
 @theme inline {

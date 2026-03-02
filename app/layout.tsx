@@ -37,7 +37,9 @@ export default function RootLayout({
         {/* Main content - positioned above the background */}
         <div className="relative z-10">
           <NavBar />
-          {children}
+          <section className='max-w-7xl mx-auto p-12'>
+            {children}
+          </section>
         </div>
       </body>
     </html>

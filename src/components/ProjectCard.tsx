@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
     return (
-        <div className="shimmer-border-wrapper my-10 rounded-xl p-0.5">
+        <div className="shimmer-border-wrapper mb-10 mt-4 rounded-xl p-0.5">
             <div className={`p-5 rounded-xl shadow h-56 flex gap-6 bg-[#171717]
             ${isReversed ? 'flex-row-reverse text-end' : 'flex-row'}`}>
 
@@ -45,6 +45,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
             </div>
         </div>
     );
-}
+};
 
 export default ProjectCard;

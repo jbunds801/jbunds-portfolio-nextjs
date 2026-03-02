@@ -1,8 +1,10 @@
 import Projects from "../../src/components/Projects";
+import Header from "../../src/components/Header";
 
 const ProjectsPage = () => {
     return (
-        <section className="max-w-7xl mx-auto p-8">
+        <section>
+            <Header>Projects</Header>
             <Projects />
         </section>
     );

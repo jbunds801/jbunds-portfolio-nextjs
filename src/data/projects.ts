@@ -19,27 +19,27 @@ export const projects: Project[] = [
   {
     title: "Pokemon API",
     description:
-      "A project using the PokeAPI website to gain experience using API's.",
+      "A single page JavaScript project using the PokeAPI website to gain experience using API's.",
     link: "https://jbunds801.github.io/Pokemon-API/",
     github: "https://github.com/jbunds801/Pokemon-API",
   },
   {
     title: "All Things Film",
     description:
-      "An ecommerce app sight using React and components with props. I used Photoshop to make the images consistent to eliminate any responisive issues related to different size images.",
+      "An ecommerce app sight using React and components with props. Features a drop down menu using mapping to filter items. I used Photoshop to design the logo and to make the images consistent to eliminate any responisive issues related to different size images.",
     link: "https://allthingsfilm.netlify.app/",
     github: "https://github.com/jbunds801/Ecommerce-App",
   },
   {
-    title: "OpenTrivia App",
-    description: "",
+    title: "Trivia Time",
+    description: "An engaging trivia app created with the OpenTrivia API website, utilizing mapping, props, score keeping, and feedback on correct or incorrect answers.",
     link: "https://jbunds-trivia-app.netlify.app/",
     github: "https://github.com/jbunds801/Trivia-App",
   },
   {
     title: "Task App 2000",
     description:
-      "A simple, colorful, intuitive task management app built for accessability.",
+      "A simple, colorful, intuitive task management app built for accessability. Utilizes AuthO for login security.",
     link: "https://taskapp2000-jbunds.netlify.app/",
     github:
       "https://github.com/jbunds801/Task-Management-App-with-TypeScript.git",
