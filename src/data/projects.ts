@@ -32,7 +32,8 @@ export const projects: Project[] = [
   },
   {
     title: "Trivia Time",
-    description: "An engaging trivia app created with the OpenTrivia API website, utilizing mapping, props, score keeping, and feedback on correct or incorrect answers.",
+    description:
+      "An engaging trivia app created with the OpenTrivia API website, utilizing mapping, props, score keeping, and feedback on correct or incorrect answers.",
     link: "https://jbunds-trivia-app.netlify.app/",
     github: "https://github.com/jbunds801/Trivia-App",
   },
@@ -43,5 +44,12 @@ export const projects: Project[] = [
     link: "https://taskapp2000-jbunds.netlify.app/",
     github:
       "https://github.com/jbunds801/Task-Management-App-with-TypeScript.git",
+  },
+  {
+    title: "Gear Galore",
+    description:
+      "An ecommerce store using Firebase and Firestore for authentication and database services. Uses Redux for state management and cart slices, a item count manager in checkout, category selector, admin capabilities for product control, account with past orders and account controls, and simple yet effective styling.",
+    link: "https://gear-galore-jbunds.vercel.app/",
+    github: "https://github.com/jbunds801/Advanced-Ecomm-Firebase.git",
   },
 ];
