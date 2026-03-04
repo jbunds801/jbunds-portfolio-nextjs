@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
                         <li>
                             <Link
                                 href="/"
-                                className="block py-2 px-3 text-white"
+                                className="block py-2 px-3 text-white hover:text-pink-cstm glow-pink"
                             >
                                 Home
                             </Link>
@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
                         <li>
                             <Link
                                 href="/about"
-                                className="block py-2 px-3 text-white"
+                                className="block py-2 px-3 text-white hover:text-cyan-cstm glow-cyan"
                             >
                                 About
                             </Link>
@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
                         <li>
                             <Link
                                 href="/projects"
-                                className="block py-2 px-3 text-white"
+                                className="block py-2 px-3 text-white hover:text-pink-cstm glow-pink"
                             >
                                 Projects
                             </Link>
@@ -37,7 +37,7 @@ const NavBar: React.FC = () => {
                         <li>
                             <Link
                                 href="/contact"
-                                className="block py-2 px-3 text-white"
+                                className="block py-2 px-3 text-white hover:text-cyan-cstm glow-cyan"
                             >
                                 Contact
                             </Link>

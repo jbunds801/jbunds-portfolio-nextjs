@@ -27,17 +27,15 @@ body {
   --font-mono: var(--font-geist-mono);
 
   /* Custom colors */
-  --color-pink-cstm: #fd53f2;
+  --color-pink-cstm: #ff64f5;
   --color-cyan-cstm: #00e1ff;
 }
 
 .glow-pink:hover {
   filter: drop-shadow(0 0 4px var(--color-pink-cstm));
-  filter: drop-shadow(0 0 4px var(--color-pink-cstm));
 }
 
 .glow-cyan:hover {
-  filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
   filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
 }
 

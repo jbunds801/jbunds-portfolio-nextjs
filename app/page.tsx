@@ -3,10 +3,10 @@ import IconsGroup from "../src/components/IconsGroup";
 
 const Home = () => {
   return (
-    <>
+    <div className="flex justify-end">
       {/* <Header>Home Page</Header> */}
-      <IconsGroup className="w-full justify-center" />
-    </>
+      <IconsGroup />
+    </div>
   );
 };
 
