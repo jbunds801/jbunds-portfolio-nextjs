@@ -4,12 +4,12 @@ import React from "react";
 const NavBar: React.FC = () => {
     return (
         <nav className="bg-transparent w-full">
-            <div className="max-w-fit mx-auto flex flex-wrap items-center justify-between pt-6">
-                <div className="flex items-center px-8 font-bold text-4xl" style={{ fontFamily: 'Trajan' }}>
-                    Jessica Bundy
+            <div className="max-w-fit mx-auto flex flex-col items-center pt-8">
+                <div className="flex items-center px-8 text-6xl" style={{ fontFamily: 'Heroeau' }}>
+                    JessiCa Bundy
                 </div>
                 <div className="w-auto" id="navbar-default">
-                    <ul className="font-medium flex flex-row p-4 mt-0 space-x-8">
+                    <ul className="font-medium flex flex-row p-8 mt-0 space-x-8">
                         <li>
                             <Link
                                 href="/"
@@ -20,18 +20,18 @@ const NavBar: React.FC = () => {
                         </li>
                         <li>
                             <Link
-                                href="/about"
+                                href="/projects"
                                 className="block py-2 px-3 text-white hover:text-cyan-cstm glow-cyan"
                             >
-                                About
+                                Projects
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href="/projects"
+                                href="/about"
                                 className="block py-2 px-3 text-white hover:text-pink-cstm glow-pink"
                             >
-                                Projects
+                                About
                             </Link>
                         </li>
                         <li>

@@ -10,12 +10,27 @@
   src: url("../public/TrajanPro-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Verve;
+  src: url("../public/Verve.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Moondance;
+  src: url("../public/Moondance.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Heroeau;
+  src: url("../public/HEROEAU\ ELEGANT\ DEMO.ttf") format("opentype");
+}
+
 html {
   overflow-y: scroll;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-y: auto;
   scrollbar-gutter: stable both-edges;
 }
