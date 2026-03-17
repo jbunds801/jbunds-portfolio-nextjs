@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased bg-[#171717] text-amber-50`}
+        className={`antialiased`}
       >
         {/* Background honeycomb pattern - appears on all pages */}
         {/* <HoneyCombBackground /> */}
