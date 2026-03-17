@@ -12,7 +12,7 @@ Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcase
 - Data-driven projects list in a single data file
 - Link preview component using an embedded iframe (when supported by the target site)
 - Custom HoneyComb component (available for background visuals)
-- Shimmer border animation on project cards (white by default, pink-to-cyan on hover)
+- Shimmer effect animation added to elements
 - Glow effects on project links via custom CSS classes
 - Custom portfolio colors defined as CSS variables in globals.css
 - Contact page with reusable `mailto:` button component (no form backend)
@@ -43,16 +43,17 @@ Projects are defined in [src/data/projects.ts](src/data/projects.ts). Each entry
 
 Custom colors, glow effects, and the shimmer border animation are defined in [app/globals.css](app/globals.css):
 
-- `--color-pink-cstm` - Primary pink (`#fd53f2`)
-- `--color-cyan-cstm` - Primary cyan (`#00e1ff`)
-- `.glow-pink` - Pink drop-shadow glow on hover
-- `.glow-cyan` - Cyan drop-shadow glow on hover
-- `.shimmer-border-wrapper` - White border by default, animated pink-to-cyan gradient on hover
+- --site-bg
+- --site-text
+- --color-pink-cstm
+- --color-cyan-cstm
+- .glow-pink
+- .glow-cyan
 
 Layout stability styles are also defined there:
+
 - `html { overflow-y: scroll; }` - always reserves vertical scrollbar space
 - `scrollbar-gutter: stable both-edges;` - avoids horizontal content shift when scrollbar state changes
-
 
 ## Link Preview Notes
 

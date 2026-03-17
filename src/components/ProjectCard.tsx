@@ -8,17 +8,18 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
     return (
-        <div className="shimmer-border-wrapper mb-10 mt-4 rounded-xl p-0.5">
-            <div className={`p-5 rounded-xl shadow h-56 flex gap-6 bg-[#171717]
+        <div className="shimmer-border max-w-4xl mx-auto mb-10 mt-3 rounded-xl bg-(--site-text) p-0.5">
+            <div className={`p-5 rounded-xl shadow h-80 sm:h-60 flex gap-6 bg-(--site-bg)
             ${isReversed ? 'flex-row-reverse text-end' : 'flex-row'}`}>
 
-                <div className="flex flex-col p-2 flex-1 min-w-0 justify-between">
+                <div className="relative flex flex-col p-2 flex-1 min-w-0 justify-between">
                     <div className="space-y-2.5">
-                        <h3 className="text-xl" style={{ fontFamily: 'Trajan' }}>{project.title}</h3>
-                        <p>{project.description}</p>
+                        <h3 className="text-l sm:text-xl" style={{ fontFamily: 'Trajan' }}>{project.title}</h3>
+                        <p className="text-sm sm:text-base pb-1">{project.description}</p>
                     </div>
 
-                    <div className={`flex gap-4 p-1 text-nowrap ${isReversed ? 'flex-row-reverse text-end' : 'flex-row'}`}>
+                    <div className={`absolute bottom-0 flex gap-4 p-2 text-nowrap ${isReversed ? ' right-0 flex-row-reverse text-end'
+                        : ' left-0 flex-row'}`}>
                         <a
                             href={project.link}
                             target="_blank"
@@ -39,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
                     </div>
                 </div>
 
-                <div className="aspect-square h-full shrink-0">
+                <div className="aspect-square p-1 h-3/5 sm:h-full shrink-0">
                     <LinkPreview url={project.link} title={project.title} />
                 </div>
             </div>

@@ -9,11 +9,11 @@ interface IconsProps {
     className?: string;
 }
 
-const Icons = ({ name, className = 'w-15 h-15' }: IconsProps) => {
+const Icons = ({ name, className = 'w-15 h-15 transition-transform hover:scale-80 duration-450' }: IconsProps) => {
 
     if (name === 'captureone') {
         return (
-
+            
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.2 124.81" className={className} role="img" aria-label="Capture One icon">
                 <defs>
                     <style>

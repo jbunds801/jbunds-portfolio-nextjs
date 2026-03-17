@@ -7,7 +7,7 @@ interface IconsGroupProps {
 
 const IconsGroup = ({ className }: IconsGroupProps) => {
     return (
-        <div className={`flex flex-wrap justify-center max-w-xl gap-8 ${className}`}>
+        <div className={`flex flex-wrap justify-center max-w-2xl gap-8 mb-10 ${className}`}>
             <Icons name="react" />
             <Icons name="nextjs" />
             <Icons name="react-router" />
@@ -29,7 +29,6 @@ const IconsGroup = ({ className }: IconsGroupProps) => {
             <Icons name="mysql" />
             <Icons name="photoshop" />
             <Icons name="captureone" />
-
         </div>
     );
 };
