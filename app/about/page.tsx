@@ -9,27 +9,26 @@ const About = () => {
                 <p className='pb-4 text-sm sm:text-base'>Jessica Bundy is a software engineer with a designer&apos;s
                     eye and a builder&apos;s mindset. She creates responsive, user-centered
                     web applications using React, TypeScript, and Python, blending
-                    thoughtful architecture with clean, intuitive interfaces. Her work
-                    reflects a balance of structure and creativity: scalable state
+                    scalable architecture with clean, intuitive interfaces. Her work
+                    reflects a balance of structure and creativity: functional state
                     management behind the scenes, and seamless user experiences on the
                     surface.</p>
 
-                <p className='pb-4 text-sm sm:text-base'>With a background in photography and visual design, Jessica approaches
+                <p className='pb-4 text-sm sm:text-base'>With a background in photography and visual arts, Jessica approaches
                     development with strong attention to composition, clarity, and detail.
                     She believes great software should not only function reliably, but
                     also feel purposeful and engaging to use. Whether implementing
                     authentication flows, managing global state, or refining UI interactions,
-                    she focuses on crafting products that are both technically sound and
+                    she focuses on building products that are both technically sound and
                     visually cohesive.</p>
 
                 <p className='pb-4 text-sm sm:text-base'>Curious by nature and collaborative by instinct, Jessica thrives in
-                    environments where design and engineering intersect. She is especially
-                    energized by building meaningful, user-facing experiences that solve real
+                    environments where design and engineering intersect. She is passionate about building meaningful, user-facing experiences that solve real
                     problems while maintaining polish and personality.</p>
 
                 <p className='pb-4 text-sm sm:text-base'>
-                    When I&apos;m not designing websites, I&apos;m doing photography, playing music, or enjoying the
-                    sun with my dog in the beautiful Utah wilderness.
+                    When not designing websites, she&apos;s doing photography with her many cameras, playing music,
+                    or enjoying the sun and outdoors with her dog in the beautiful Utah wilderness.
                 </p>
             </section>
 

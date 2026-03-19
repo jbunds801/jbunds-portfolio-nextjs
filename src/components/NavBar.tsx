@@ -10,8 +10,8 @@ const NavBar: React.FC = () => {
                 <div className="flex items-center px-8 text-5xl sm:text-6xl" style={{ fontFamily: 'Heroeau' }}>
                     JessiCa BUndy
                 </div>
-                <div className="w-auto hidden sm:block" id="navbar-default">
-                    <ul className="font-medium flex flex-row p-8 mt-0 space-x-8">
+                <div /* className="hidden sm:block" */ id="navbar-default">
+                    <ul className="text-xs sm:text-base font-medium flex flex-row p-8 mt-0 space-x-8">
                         <li>
                             <Link
                                 href="/"

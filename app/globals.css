@@ -58,10 +58,10 @@ body {
 
 @keyframes my-shimmer {
   0% {
-    background-position: 0%;
+    background-position: -50%;
   }
   100% {
-    background-position: 200%;
+    background-position: 150%;
   }
 }
 
@@ -70,7 +70,7 @@ body {
     65deg,
     var(--color-pink-cstm),
     var(--color-cyan-cstm),
-    var(--site-text),
+    white,
     var(--color-cyan-cstm),
     var(--color-pink-cstm)
   );
@@ -84,7 +84,7 @@ body {
     65deg,
     var(--color-pink-cstm),
     var(--color-cyan-cstm),
-    var(--site-text),
+    white,
     var(--color-cyan-cstm),
     var(--color-pink-cstm)
   );
@@ -100,12 +100,6 @@ body {
 
 .glow-cyan:hover {
   filter: drop-shadow(0 0 4px #77eaf9) drop-shadow(0 0 4px #77eaf9);
-}
-
-/* Reference Only */
-color picker {
-  background-color: #7eb6d6;
-  color: #ff8df7;
 }
 
 /* @media (prefers-color-scheme: dark) {
