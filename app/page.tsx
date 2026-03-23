@@ -6,7 +6,7 @@ const Home = () => {
     <>
       
       <p className="text-center mx-auto max-w-2xl mb-20 text-sm sm:text-base">
-        Welcome! I&apos;m Jessica Bundy, a junior software engineer with a background in photography and visual design who builds thoughtful, 
+        Welcome! I&apos;m Jessica Bundy, a creative software engineer with a background in photography and visual design who builds thoughtful, 
         well-designed, and user-centered applications with React, TypeScript, and Python. Explore my work and learn a little more about me!
       </p>
       <Header>Skills</Header>

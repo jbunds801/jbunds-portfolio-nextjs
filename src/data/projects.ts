@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     title: "Gear Galore",
     description:
-      "An ecommerce store using Firebase and Firestore for authentication and database services. Uses Redux for state management and cart slices, a item count manager in checkout, category selector, admin capabilities for product control, account with past orders and account controls, and simple yet effective styling.",
+      "An ecommerce store using Firebase and Firestore for authentication and database services. Uses Redux for state management and cart slices, an item count manager in checkout, category selector, admin capabilities for product control, account with past orders and account controls, and simple yet effective styling.",
     link: "https://gear-galore-jbunds.vercel.app/",
     github: "https://github.com/jbunds801/Advanced-Ecomm-Firebase.git",
   },
