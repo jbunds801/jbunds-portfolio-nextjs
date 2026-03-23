@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 //import { Geist, Geist_Mono } from "next/font/google";
-import NavBar from "../src/components/NavBar";
 //import HoneyCombBackground from '../src/components/HoneyCombBackground';
 import "./globals.css";
+import NavBar from "../src/components/NavBar";
+import Footer from "../src/components/Footer";
 
 // Google Fonts
 /* const geistSans = Geist({
@@ -33,13 +34,13 @@ export default function RootLayout({
       >
         {/* Background honeycomb pattern - appears on all pages */}
         {/* <HoneyCombBackground /> */}
-        
-        {/* Main content - positioned above the background */}
-        <div className="relative z-10">
+
+        <div>
           <NavBar />
           <section className='max-w-7xl mx-auto p-12'>
             {children}
           </section>
+          <Footer />
         </div>
       </body>
     </html>

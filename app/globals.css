@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /* Custom colors */
   --site-bg: #171717;
   --site-text: #fdf0ff;
 }
@@ -26,15 +27,20 @@
 }
 
 html {
-  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--site-bg);
   color: var(--site-text);
-  overflow-y: auto;
-  scrollbar-gutter: stable both-edges;
+  /* overflow-y: auto;
+  scrollbar-gutter: stable both-edges; */
+}
+
+ul {
+  border: none;
+  backdrop-filter: blur(2px);
 }
 
 @theme inline {
