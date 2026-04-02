@@ -7,7 +7,7 @@ const NavBar: React.FC = () => {
     return (
         <nav className="bg-transparent w-full">
             <div className="mx-auto flex sm:flex-col justify-between items-center px-10 pt-8">
-                <div className="flex text-5xl sm:text-6xl" style={{ fontFamily: 'Heroeau' }}>
+                <div className="flex text-5xl md:text-6xl" style={{ fontFamily: 'Heroeau' }}>
                     JessiCa BUndy
                 </div>
                 <div className="sm:hidden">
