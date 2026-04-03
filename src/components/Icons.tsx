@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
-type IconName = 'react' | 'nextjs' | 'bootstrap' | 'react-router' | 'redux' | 'firebase' | 'figma' | 'javascript' | 'typescript' | 'python'
-    | 'flask' | 'mysql' | 'sqlalchemy' | 'html5' | 'css3' | 'tailwind' | 'git' | 'github' | 'postman'
+type IconName = 'react' | 'nextjs' | 'javascript' | 'typescript' | 'react-router' | 'redux' | 'firebase' | 'html5' | 'css3'
+    | 'bootstrap' | 'tailwind' | 'github' | 'git' | 'python' | 'flask' | 'mysql' | 'sqlalchemy' | 'figma' | 'postman'
     | 'photoshop' | 'captureone';
 
 interface IconsProps {
@@ -10,26 +10,6 @@ interface IconsProps {
 }
 
 const Icons = ({ name, className = 'w-15 h-15 transition-transform hover:scale-80 duration-450' }: IconsProps) => {
-
-    if (name === 'captureone') {
-        return (
-
-            <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 121.2 124.81" className={className} role="img">
-                <title>Capture One Pro</title>
-                <defs>
-                    <style>
-                        {`.cls-1 {
-                            fill: #e9e9e9;
-                            /* fill: #000; */
-                            stroke-width: 0px;
-                        }`}
-                    </style>
-                </defs>
-                <path className="cls-1" d="M62.41,114.62c-28.79,0-52.22-23.43-52.22-52.22S33.61,10.18,62.41,10.18c21.36,0,39.76,12.9,47.84,31.32h10.95C112.58,17.34,89.49,0,62.41,0,28,0,0,27.99,0,62.4s28,62.41,62.41,62.41c27.01,0,50.07-17.26,58.73-41.32h-10.97c-8.12,18.32-26.46,31.14-47.76,31.14Z" />
-                <path className="cls-1" d="M62.41,21.88c-22.34,0-40.52,18.18-40.52,40.52s18.18,40.52,40.52,40.52,40.52-18.18,40.52-40.52-18.18-40.52-40.52-40.52ZM62.41,92.88c-16.81,0-30.48-13.67-30.48-30.48s13.67-30.48,30.48-30.48,30.48,13.67,30.48,30.48-13.67,30.48-30.48,30.48Z" />
-            </svg>
-        );
-    }
 
     if (name === 'react') {
         return (
@@ -291,8 +271,27 @@ const Icons = ({ name, className = 'w-15 h-15 transition-transform hover:scale-8
         );
     }
 
-    return null;
+    if (name === 'captureone') {
+        return (
 
+            <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 121.2 124.81" className={className} role="img">
+                <title>Capture One Pro</title>
+                <defs>
+                    <style>
+                        {`.cls-1 {
+                            fill: #e9e9e9;
+                            /* fill: #000; */
+                            stroke-width: 0px;
+                        }`}
+                    </style>
+                </defs>
+                <path className="cls-1" d="M62.41,114.62c-28.79,0-52.22-23.43-52.22-52.22S33.61,10.18,62.41,10.18c21.36,0,39.76,12.9,47.84,31.32h10.95C112.58,17.34,89.49,0,62.41,0,28,0,0,27.99,0,62.4s28,62.41,62.41,62.41c27.01,0,50.07-17.26,58.73-41.32h-10.97c-8.12,18.32-26.46,31.14-47.76,31.14Z" />
+                <path className="cls-1" d="M62.41,21.88c-22.34,0-40.52,18.18-40.52,40.52s18.18,40.52,40.52,40.52,40.52-18.18,40.52-40.52-18.18-40.52-40.52-40.52ZM62.41,92.88c-16.81,0-30.48-13.67-30.48-30.48s13.67-30.48,30.48-30.48,30.48,13.67,30.48,30.48-13.67,30.48-30.48,30.48Z" />
+            </svg>
+        );
+    }
+
+    return null;
 };
 
 export default Icons;
