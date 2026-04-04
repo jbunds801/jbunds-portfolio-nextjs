@@ -1,23 +1,29 @@
 # Jbunds Portfolio (Next.js)
 
-Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcases projects with link previews, uses shared page-level layout styling, and reusable UI components.
+Personal portfolio built with Next.js (App Router), Tailwind CSS v4, and TypeScript. Showcases projects, skills, and contact information with custom animations and a consistent visual theme.
+
+## Stack
+
+- **Next.js 16** — App Router, file-based routing
+- **Tailwind CSS v4** — utility-first styling with CSS variable integration
+- **TypeScript** — strict typing throughout
+- **styled-components** — scoped component styles (ContactForm)
+- **EmailJS** — client-side contact form submission (no backend required)
+- **lucide-react** — icon set used in the hamburger nav
 
 ## Features
 
-- App Router with shared layout-level navigation and global styling
-- Tailwind CSS utility-first styling
-- Custom font (TrajanPro) loaded via `@font-face` in globals.css
-- Reusable page heading component (`Header`) for consistent title styling and spacing
-- Projects page with alternating card layout
-- Data-driven projects list in a single data file
-- Link preview component using an embedded iframe (when supported by the target site)
-- Custom HoneyComb component (available for background visuals)
-- Shimmer effect animation added to elements
-- Glow effects on project links via custom CSS classes
-- Custom portfolio colors defined as CSS variables in globals.css
-- Contact page with reusable `mailto:` button component (no form backend)
-- Stable page width behavior via scrollbar gutter handling
-- About page
+- Responsive layout — stacks on mobile, side-by-side on `md`+
+- Collapsible hamburger nav on small screens
+- Shimmer border animation on hover (project cards, contact form)
+- Shimmer text animation on the home page header
+- Glow effects on links via custom CSS classes
+- Skills section with SVG icon grid on the home page
+- Data-driven projects list — add a project by editing one file
+- Link preview component using an embedded iframe
+- HoneyComb / HoneyCombBackground decorative components
+- Custom font (TrajanPro) via `@font-face` in globals.css
+- Stable page width via scrollbar gutter handling
 
 ## Pages
 
@@ -28,16 +34,20 @@ Personal portfolio built with Next.js (App Router) and Tailwind CSS. It showcase
 
 ## Components
 
+- Nav bar (desktop): [src/components/NavBar.tsx](src/components/NavBar.tsx)
+- Nav bar (mobile/hamburger): [src/components/NavBarHamburger.tsx](src/components/NavBarHamburger.tsx)
+- Page heading: [src/components/Header.tsx](src/components/Header.tsx)
 - Projects list: [src/components/Projects.tsx](src/components/Projects.tsx)
 - Project card: [src/components/ProjectCard.tsx](src/components/ProjectCard.tsx)
 - Link preview: [src/components/LinkPreview.tsx](src/components/LinkPreview.tsx)
-- Nav bar: [src/components/NavBar.tsx](src/components/NavBar.tsx)
-- Header: [src/components/Header.tsx](src/components/Header.tsx)
+- Contact form: [src/components/ContactForm.tsx](src/components/ContactForm.tsx)
 - Mailto button: [src/components/MailToButton.tsx](src/components/MailToButton.tsx)
+- SVG icons: [src/components/Icons.tsx](src/components/Icons.tsx)
+- Icon grid: [src/components/IconsGroup.tsx](src/components/IconsGroup.tsx)
 
 ## Data
 
-Projects are defined in [src/data/projects.ts](src/data/projects.ts). Each entry uses the `Project` type in [src/types/project_type.ts](src/types/project_type.ts).
+Projects are defined in [src/data/projects.ts](src/data/projects.ts) using the `Project` type from [src/types/project_type.ts](src/types/project_type.ts).
 
 ## Custom Styling
 
@@ -49,6 +59,15 @@ Custom colors, glow effects, and the shimmer border animation are defined in [ap
 - --color-cyan-cstm
 - .glow-pink
 - .glow-cyan
+
+Key utility classes: `.shimmer-border`, `.shimmer-text`, `.glow-pink`, `.glow-cyan`
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
 
 Layout stability styles are also defined there:
 

@@ -62,7 +62,7 @@ ul {
   filter: drop-shadow(0 0 4px var(--color-cyan-cstm));
 }
 
-@keyframes my-shimmer {
+@keyframes shimmer-text {
   0% {
     background-position: -50%;
   }
@@ -71,33 +71,46 @@ ul {
   }
 }
 
+@keyframes shimmer-border {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 .shimmer-border:hover {
   background: linear-gradient(
     65deg,
+    transparent,
     var(--color-pink-cstm),
     var(--color-cyan-cstm),
     white,
     var(--color-cyan-cstm),
-    var(--color-pink-cstm)
+    var(--color-pink-cstm),
+    transparent
   );
   background-size: 400% auto;
-  animation: my-shimmer 6s linear infinite alternate;
+  animation: shimmer-border 6s linear infinite alternate;
 }
 
 .shimmer-text:hover {
   color: transparent;
   background-image: linear-gradient(
     65deg,
+    /* transparent, */
     var(--color-pink-cstm),
     var(--color-cyan-cstm),
     white,
     var(--color-cyan-cstm),
-    var(--color-pink-cstm)
+    var(--color-pink-cstm),
+    /* transparent */
   );
   background-size: 400% auto;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: my-shimmer 6s linear infinite alternate;
+  animation: shimmer-text 8s linear infinite alternate;
 }
 
 .glow-pink:hover {
