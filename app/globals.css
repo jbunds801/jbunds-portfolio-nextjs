@@ -99,13 +99,11 @@ ul {
   color: transparent;
   background-image: linear-gradient(
     65deg,
-    /* transparent, */
-    var(--color-pink-cstm),
+    /* transparent, */ var(--color-pink-cstm),
     var(--color-cyan-cstm),
     white,
     var(--color-cyan-cstm),
-    var(--color-pink-cstm)
-    /* transparent */
+    var(--color-pink-cstm) /* transparent */
   );
   background-size: 400% auto;
   background-clip: text;
@@ -127,3 +125,30 @@ ul {
     --foreground: #ededed;
   }
 } */
+
+.iframe-preview {
+  transform: scale(0.3);
+  transform-origin: center center;
+  width: 333.33%;
+  height: 333.33%;
+  margin-left: -116.67%;
+  margin-top: -116.67%;
+}
+
+/* @media (min-width: 768px) {
+  .iframe-preview {
+    transform: scale(0.35);
+    width: 285.71%;
+    height: 285.71%;
+    margin-left: -92.85%;
+    margin-top: -92.85%;
+  }
+} */
+
+/* Change scale(.3) - this is your zoom percentage(.3 = 30 %, .5 = 50 %, etc.)
+
+Calculate the other values based on scale:
+
+width and height: 1 / scale * 100 = 333.33 % (for .3 scale)
+marginLeft and marginTop: -(width - 100 %) / 2 = -116.67 % */
+

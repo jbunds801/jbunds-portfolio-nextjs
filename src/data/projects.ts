@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     title: "Lorum Ipsum Event Center",
     description:
-      "My first project, built using only HTML and CSS. I designed the logo, and used CaptureOne to make all of colors consistant in the images and Photoshop to make them all the same size.",
+      "My first project, built using only HTML and CSS. I designed the logo, and used CaptureOne to make all of the image colors consistent and Photoshop to make them all the same size.",
     link: "https://lorumipsumeventcenter.netlify.app/",
     github: "https://github.com/jbunds801/Event-Center-Website",
   },
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     title: "Gear Galore",
     description:
-      "An ecommerce store using Firebase and Firestore for authentication and database services. Uses Redux for state management and cart slices, an item count manager in checkout, category selector, admin capabilities for product control, account with past orders and account controls, and simple yet effective styling.",
+      "An ecommerce store using Firebase and Firestore for authentication and database services. Uses Redux for state management and an item count manager in checkout, category selector, admin capabilities for product control, account with past orders and account controls, with simple yet effective styling.",
     link: "https://gear-galore-jbunds.vercel.app/",
     github: "https://github.com/jbunds801/Advanced-Ecomm-Firebase.git",
   },
