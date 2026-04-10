@@ -2,6 +2,7 @@ import React from 'react'
 import MailToButton from '../../src/components/MailToButton';
 import Header from '../../src/components/Header';
 import ContactForm from '../../src/components/ContactForm';
+import CopyText from '../../src/components/CopyText';
 
 const Contact = () => {
     return (
@@ -19,11 +20,13 @@ const Contact = () => {
 
                     <div className='space-y-2'>
 
-                        <p className='text-l sm:text-xl'>Email: <MailToButton
-                            email='jbunds@proton.me'
-                            label='jbunds@proton.me'
-                            subject='Portfolio Inquiry'
-                            className='inline-block text-md sm:text-lg p-2 text-pink-cstm glow-pink' />
+                        <p className='text-l sm:text-xl'>Email:
+                            <MailToButton
+                                email='jbunds@proton.me'
+                                label='jbunds@proton.me'
+                                subject='Portfolio Inquiry'
+                                className='inline-block text-md sm:text-lg p-2 text-pink-cstm glow-pink'
+                            />
                         </p>
 
                         <div className='mt-2 md:mt-4 flex flex-col md:flex-row gap-2 md:gap-8 justify-center items-center'>
@@ -36,6 +39,12 @@ const Contact = () => {
                                 <a href="https://github.com/jbunds801"
                                     className='text-md sm:text-l text-cyan-cstm glow-cyan'>GitHub</a>
                             </div>
+                        </div>
+
+                        <div className='mt-2 md:mt-4 flex flex-col md:flex-row gap-2 md:gap-8 justify-center items-center'>
+                            <p className='text-l sm:text-xl'>Discord:
+                                <CopyText text='.jbunds.' className='text-md sm:text-lg p-2 text-pink-cstm glow-pink' />
+                            </p>
                         </div>
 
                     </div>
