@@ -14,7 +14,7 @@ const ContactForm = () => {
 
     try {
       const formData = new FormData(event.currentTarget);
-      formData.append('access_key', '7fcdd263-a739-4878-b67b-063f8ff704cb');
+      formData.append('access_key', '687126e5-fb0a-4a9b-9abf-f62ca53a98c9');
 
       const res = await fetch('https://api.web3forms.com/submit', {
         method: "POST",
@@ -22,6 +22,7 @@ const ContactForm = () => {
       });
 
       const data = await res.json();
+      console.log(data);
       setResult(data.success ? "Message sent!"
         : "Something went wrong, try again later.");
       if (data.success) form.reset();
@@ -30,7 +31,7 @@ const ContactForm = () => {
     }
   };
 
-  
+
   return (
     <StyledWrapper>
       <div className="shimmer-border rounded-2xl bg-(--site-text) p-0.5 w-fit">
