@@ -52,4 +52,12 @@ export const projects: Project[] = [
     link: "https://gear-galore-jbunds.vercel.app/",
     github: "https://github.com/jbunds801/Advanced-Ecomm-Firebase.git",
   },
+  {
+    title: "EmergiScan",
+    description:
+      "An app for users to make an account to list all of their medical conditions and medications and provide a personal QR code to help medical staff in making decisions during an emergency. Created by a full team of engineers during my Tech Residency with Coding Temple.",
+    link: null,
+    image: "/EmergiScan_Screenshot.png",
+    github: "https://github.com/jbunds801/TR41-EMERGENCYHEALTH.git",
+  },
 ];

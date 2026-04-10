@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Project } from "../types/project_type";
 import LinkPreview from "./LinkPreview";
 
@@ -21,14 +22,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
                     {/* <div className={`mt-4 md:absolute bottom-0 flex gap-4 p-2 text-nowrap ${isReversed ? 'justify-start md:right-0 flex-row-reverse text-end' */}
                     <div className={`mt-4 md:absolute bottom-0 flex gap-4 p-2 text-nowrap max-[400px]:!flex-col ${isReversed ? 'justify-start md:right-0 flex-row-reverse text-end'
                         : ' left-0 flex-row'}`}>
-                        <a
+                        {project.link && <a
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm sm:text-base text-pink-cstm glow-pink"
                         >
                             View Project
-                        </a>
+                        </a>}
 
                         <a
                             href={project.github}
@@ -41,9 +42,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
                     </div>
                 </div>
 
-                <div className="aspect-square p-1 max-w-xs shrink-0 mx-auto md:mx-0">
-                    <LinkPreview url={project.link} title={project.title} />
-                </div>
+                {project.link
+                    ? <div className="aspect-square p-1 max-w-xs shrink-0 mx-auto md:mx-0">
+                        <LinkPreview url={project.link} title={project.title} />
+                    </div>
+                    : project.image && <div className="aspect-square rounded-3xl overflow-hidden max-w-xs shrink-0 mx-auto md:mx-0">
+                        <Image src={project.image} alt={project.title} width={300} height={300} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                    </div>
+                }
             </div>
         </div>
     );
