@@ -1,25 +1,58 @@
+"use client"
+
 import styled from 'styled-components';
+import { useState } from 'react';
 
 const ContactForm = () => {
-    return (
-        <StyledWrapper>
-            <div className="shimmer-border rounded-2xl bg-(--site-text) p-0.5 w-fit">
-                <div className="form-container">
-                    <form className="form">
-                        <div className="form-group text-xs">
-                            <label htmlFor="email">Contact Email</label>
-                            <input type="text" id="email" name="email" required />
-                        </div>
-                        <div className="form-group text-xs">
-                            <label htmlFor="textarea">Questions or Comments</label>
-                            <textarea name="textarea" id="textarea" rows={10} cols={50} required defaultValue={"          "} />
-                        </div>
-                        <button className="form-submit-btn text-xs" type="submit">Submit</button>
-                    </form>
-                </div>
+  const [result, setResult] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSubmitting(true);
+    const form = event.currentTarget;
+
+    try {
+      const formData = new FormData(event.currentTarget);
+      formData.append('access_key', '7fcdd263-a739-4878-b67b-063f8ff704cb');
+
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+      setResult(data.success ? "Message sent!"
+        : "Something went wrong, try again later.");
+      if (data.success) form.reset();
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  
+  return (
+    <StyledWrapper>
+      <div className="shimmer-border rounded-2xl bg-(--site-text) p-0.5 w-fit">
+        <div className="form-container">
+          <form className="form" onSubmit={onSubmit}>
+            <div className="form-group text-xs">
+              <label htmlFor="email">Contact Email</label>
+              <input type="text" id="email" name="email" required />
             </div>
-        </StyledWrapper>
-    );
+            <div className="form-group text-xs">
+              <label htmlFor="message">Questions or Comments</label>
+              <textarea name="message" id="message" rows={10} cols={50} required />
+            </div>
+            <button className="form-submit-btn text-xs" type="submit" disabled={submitting}>
+              {submitting ? "Sending..." : "Submit"}
+            </button>
+            {result && <p className='text-xs text-center shimmer-text-active'>{result}</p>}
+          </form>
+        </div>
+      </div>
+    </StyledWrapper>
+  );
 }
 
 const StyledWrapper = styled.div`
