@@ -37,17 +37,24 @@ const ContactForm = () => {
       <div className="shimmer-border rounded-2xl bg-(--site-text) p-0.5 w-fit">
         <div className="form-container">
           <form className="form" onSubmit={onSubmit}>
+
+            <input className='hidden' style={{ display: 'none' }}
+              type='checkbox' name='botcheck' />
+
             <div className="form-group text-xs">
               <label htmlFor="email">Contact Email</label>
               <input type="text" id="email" name="email" required />
             </div>
+
             <div className="form-group text-xs">
               <label htmlFor="message">Questions or Comments</label>
               <textarea name="message" id="message" rows={10} cols={50} required />
             </div>
+
             <button className="form-submit-btn text-xs" type="submit" disabled={submitting}>
               {submitting ? "Sending..." : "Submit"}
             </button>
+
             {result && <p className='text-xs text-center shimmer-text-active'>{result}</p>}
           </form>
         </div>
