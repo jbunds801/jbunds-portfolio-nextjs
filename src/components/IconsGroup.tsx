@@ -9,6 +9,7 @@ const IconsGroup = ({ className }: IconsGroupProps) => {
     return (
         <div className={`flex flex-wrap justify-center max-w-2xl gap-8 mb-10 ${className}`}>
             <Icons name="react" />
+            <Icons name="vite" />
             <Icons name="nextjs" />
             <Icons name="react-router" />
             <Icons name="javascript" />

@@ -2,14 +2,14 @@
 
 type IconName = 'react' | 'nextjs' | 'javascript' | 'typescript' | 'react-router' | 'redux' | 'firebase' | 'html5' | 'css3'
     | 'bootstrap' | 'tailwind' | 'github' | 'git' | 'python' | 'flask' | 'mysql' | 'sqlalchemy' | 'figma' | 'postman'
-    | 'photoshop' | 'captureone';
+    | 'photoshop' | 'captureone' | 'vite';
 
 interface IconsProps {
     name: IconName;
     className?: string;
 }
 
-const Icons = ({ name, className = 'w-15 h-15 transition-transform hover:scale-80 duration-450' }: IconsProps) => {
+const Icons = ({ name, className = 'w-12 sm:w-15 h-12 sm:h-15 transition-transform hover:scale-80 duration-450' }: IconsProps) => {
 
     if (name === 'react') {
         return (
@@ -288,6 +288,29 @@ const Icons = ({ name, className = 'w-15 h-15 transition-transform hover:scale-8
                 <path className="cls-1" d="M62.41,114.62c-28.79,0-52.22-23.43-52.22-52.22S33.61,10.18,62.41,10.18c21.36,0,39.76,12.9,47.84,31.32h10.95C112.58,17.34,89.49,0,62.41,0,28,0,0,27.99,0,62.4s28,62.41,62.41,62.41c27.01,0,50.07-17.26,58.73-41.32h-10.97c-8.12,18.32-26.46,31.14-47.76,31.14Z" />
                 <path className="cls-1" d="M62.41,21.88c-22.34,0-40.52,18.18-40.52,40.52s18.18,40.52,40.52,40.52,40.52-18.18,40.52-40.52-18.18-40.52-40.52-40.52ZM62.41,92.88c-16.81,0-30.48-13.67-30.48-30.48s13.67-30.48,30.48-30.48,30.48,13.67,30.48,30.48-13.67,30.48-30.48,30.48Z" />
             </svg>
+        );
+    }
+
+    if (name === 'vite') {
+        return (
+
+            <svg viewBox="0 0 128 128" className={className}>
+                <title>Vite</title>
+                <defs>
+                    <linearGradient id="a" x1="6" x2="235" y1="33" y2="344" gradientTransform="translate(0 .937) scale(.3122)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#41d1ff"></stop>
+                        <stop offset="1" stop-color="#bd34fe"></stop>
+                    </linearGradient>
+                    <linearGradient id="b" x1="194.651" x2="236.076" y1="8.818" y2="292.989" gradientTransform="translate(0 .937) scale(.3122)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ffea83"></stop>
+                        <stop offset=".083" stop-color="#ffdd35"></stop>
+                        <stop offset="1" stop-color="#ffa800"></stop>
+                    </linearGradient>
+                </defs>
+                <path fill="url(#a)" d="M124.766 19.52 67.324 122.238c-1.187 2.121-4.234 2.133-5.437.024L3.305 19.532c-1.313-2.302.652-5.087 3.261-4.622L64.07 25.187a3.09 3.09 0 0 0 1.11 0l56.3-10.261c2.598-.473 4.575 2.289 3.286 4.594Zm0 0"></path>
+                <path fill="url(#b)" d="M91.46 1.43 48.954 9.758a1.56 1.56 0 0 0-1.258 1.437l-2.617 44.168a1.563 1.563 0 0 0 1.91 1.614l11.836-2.735a1.562 1.562 0 0 1 1.88 1.836l-3.517 17.219a1.562 1.562 0 0 0 1.985 1.805l7.308-2.223c1.133-.344 2.223.652 1.985 1.812l-5.59 27.047c-.348 1.692 1.902 2.614 2.84 1.164l.625-.968 34.64-69.13c.582-1.16-.421-2.48-1.69-2.234l-12.185 2.352a1.558 1.558 0 0 1-1.793-1.965l7.95-27.562A1.56 1.56 0 0 0 91.46 1.43Zm0 0"></path>
+            </svg>
+
         );
     }
 
