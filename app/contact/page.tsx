@@ -15,12 +15,11 @@ const Contact = () => {
                     <p>Contact me using one of the ways below!</p>
                 </div>
 
-                <div className='flex flex-col md:flex-row justify-center p-8 gap-10 mx-auto items-center md:items-start'>
+                <div className='flex flex-col md:flex-row justify-center pt-8 sm:p-8 gap-10 mx-auto items-center md:items-start'>
                     <ContactForm />
 
                     <div className='space-y-2'>
-
-                        <p className='text-l sm:text-xl'>Email:
+                        <p className='text-md sm:text-l'>Email:
                             <MailToButton
                                 email='jbunds@proton.me'
                                 label='jbunds@proton.me'
@@ -29,7 +28,7 @@ const Contact = () => {
                             />
                         </p>
 
-                        <div className='mt-2 md:mt-4 flex flex-col md:flex-row gap-2 md:gap-8 justify-center items-center'>
+                        <div className='mt-2 md:mt-4 flex flex-col md:flex-row gap-2 md:gap-5 justify-center items-center'>
                             <div>
                                 <a href="https://www.linkedin.com/in/jessica-bundy-46a753a9/"
                                     className='text-md sm:text-l text-cyan-cstm glow-cyan'>LinkedIn</a>
@@ -42,11 +41,10 @@ const Contact = () => {
                         </div>
 
                         <div className='mt-2 md:mt-4 flex flex-col md:flex-row gap-2 md:gap-8 justify-center items-center'>
-                            <p className='text-l sm:text-xl'>Discord:
+                            <p className='text-md sm:text-l p-2'>Discord:
                                 <CopyText text='.jbunds.' className='text-md sm:text-lg p-2 text-pink-cstm glow-pink' />
                             </p>
                         </div>
-
                     </div>
 
                 </div>

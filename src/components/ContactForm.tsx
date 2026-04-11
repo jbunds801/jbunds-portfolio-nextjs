@@ -35,7 +35,7 @@ const ContactForm = () => {
   return (
     <StyledWrapper>
       <div className="shimmer-border rounded-2xl bg-(--site-text) p-0.5 w-fit">
-        <div className="form-container">
+        <div className="form-container px-4 py-5 sm:px-6 sm:py-8">
           <form className="form" onSubmit={onSubmit}>
 
             <input className='hidden' style={{ display: 'none' }}
@@ -65,9 +65,10 @@ const ContactForm = () => {
 
 const StyledWrapper = styled.div`
   .form-container {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     background-color: var(--site-bg);
-    padding: 32px 24px;
+    /* padding: 32px 24px; */
     font-size: 14px;
     display: flex;
     flex-direction: column;
