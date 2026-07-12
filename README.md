@@ -62,14 +62,33 @@ Custom colors, glow effects, and the shimmer border animation are defined in [ap
 
 Key utility classes: `.shimmer-border`, `.shimmer-text`, `.glow-pink`, `.glow-cyan`
 
-## Getting Started
+## Environment Setup (Recommended)
 
-```bash
-npm install
-npm run dev
+This project is pinned to Node `20.20.2` for local development stability.
+
+Node `20.20.2` is the recommended fallback if Node 22 has native module errors.
+
+If you use `nvm-windows`:
+
+```powershell
+nvm use 20.20.2
+node -v
 ```
 
-Layout stability styles are also defined there:
+You can also run:
+
+```powershell
+nvm use (Get-Content .nvmrc)
+```
+
+If `node_modules` ever gets into a bad state after switching Node versions, do a clean install:
+
+```powershell
+Remove-Item -Recurse -Force node_modules -ErrorAction SilentlyContinue
+npm install
+```
+
+Layout stability styles are defined in `app/globals.css`:
 
 - `html { overflow-y: scroll; }` - always reserves vertical scrollbar space
 - `scrollbar-gutter: stable both-edges;` - avoids horizontal content shift when scrollbar state changes
