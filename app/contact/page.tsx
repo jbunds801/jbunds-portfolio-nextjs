@@ -1,5 +1,5 @@
 import React from 'react'
-import MailToButton from '../../src/components/MailToButton';
+//import MailToButton from '../../src/components/MailToButton';
 import Header from '../../src/components/Header';
 import ContactForm from '../../src/components/ContactForm';
 import CopyText from '../../src/components/CopyText';
@@ -19,14 +19,14 @@ const Contact = () => {
                     <ContactForm />
 
                     <div className='space-y-2'>
-                        <p className='text-md sm:text-l'>Email:
+                        {/* <p className='text-md sm:text-l'>Email:
                             <MailToButton
                                 email='jbunds@proton.me'
                                 label='jbunds@proton.me'
                                 subject='Portfolio Inquiry'
                                 className='inline-block text-md sm:text-lg p-2 text-pink-cstm glow-pink'
                             />
-                        </p>
+                        </p> */}
 
                         <div className='mt-2 md:mt-4 flex flex-col md:flex-row gap-2 md:gap-5 justify-center items-center'>
                             <div>

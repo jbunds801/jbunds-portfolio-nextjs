@@ -8,7 +8,7 @@ Personal portfolio built with Next.js (App Router), Tailwind CSS v4, and TypeScr
 - **Tailwind CSS v4** — utility-first styling with CSS variable integration
 - **TypeScript** — strict typing throughout
 - **styled-components** — scoped component styles (ContactForm)
-- **EmailJS** — client-side contact form submission (no backend required)
+- **Web3Forms** — client-side contact form submission (no backend required)
 - **lucide-react** — icon set used in the hamburger nav
 
 ## Features
