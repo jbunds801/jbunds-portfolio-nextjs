@@ -1,9 +1,21 @@
-import React from 'react'
+import Link from "next/link"
 
 const Footer = () => {
     return (
-        <div className='fixed bottom-0 right-0 w-full'>
-            <p className='text-xs flex font-extralight text-current/50 justify-end px-4 pb-2'>© Jessica Bundy 2026</p>
+        <div className='-full flex justify-end p-2'>
+            <Link
+                href="https://github.com/jbunds801" target="_blank" rel="noopener noreferrer"
+                className='text-xs flex font-extralight text-pink-cstm/75 glow-pink justify-end px-4 pb-2'
+            >
+                GitHub
+            </Link>
+            <Link
+                href="https://https://www.linkedin.com/in/jessica-bundy-46a753a9/" target="_blank" rel="noopener noreferrer"
+                className='text-xs font-extralight text-cyan-cstm/75 glow-cyan px-4 pb-2'
+            >
+                LinkedIn
+            </Link>
+            <p className='text-xs font-extralight text-current/75 px-4 pb-2'>© Jessica Bundy 2026</p>
         </div>
     )
 }
